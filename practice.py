@@ -1,3 +1,25 @@
+Set A — Python OOP / Error Handling
+
+A1 (Library Loan Tracker): Custom exceptions — building your own Exception subclass with a useful message.
+A2 (Shape Hierarchy): Abstract base classes (abc.ABC) — forcing subclasses to implement shared methods, and trusting polymorphism instead of isinstance checks.
+A3 (Retry-Safe API Caller): try/except retry loops — catching a specific exception, retrying, and raising your own error after repeated failure.
+A4 (Employee Payroll): Class attributes vs. instance attributes — the trap where one shared value should update everyone at once.
+A5 (Logging Decorator): Decorators — wrapping a function to add behavior (logging) without touching its original code, using functools.wraps.
+
+Set B — Data / Pandas / NumPy / Sklearn
+
+B1 (Messy Survey Cleanup): Pandas data cleaning — stripping whitespace, fixing inconsistent case, filling missing values, dropping duplicates.
+B2 (Vectorized Grading Curve): NumPy vectorization — applying math to a whole array at once (no loops) using broadcasting and np.clip/np.where.
+B3 (Nearest Neighbor by Hand): Cosine similarity — comparing vectors to find the "closest match" using sklearn.
+B4 (Spam Filter Confusion Matrix): Classification metrics — confusion matrix, precision, recall, F1, and reasoning about false positives vs. false negatives.
+B5 (Token Budget Estimator): Practical estimation function — summing a heuristic count across items and raising a clear error when a limit is exceeded.
+
+
+
+#===================================================================================================
+
+
+
 #Book - title (str), isbn (int), is_checked_out ()DONE
 #Member - borrow_book, return_book(book) -> functions DONE
 #BookUnavailableError -> Custom Exception Handler
