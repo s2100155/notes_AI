@@ -20,6 +20,7 @@ git branch -M main         # rename default branch to 'main' (first time only)
 git push -u origin main    # first push, sets upstream
 
 
+#bash (next push)
 
 git status
 git add .
