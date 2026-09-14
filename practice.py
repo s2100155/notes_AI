@@ -35,6 +35,9 @@ B5 (Token Budget Estimator): Practical estimation function — summing a heurist
 
 #=============================================================================================================
 
+A1 (Library Loan Tracker): Custom exceptions — building your own Exception subclass with a useful message.
+
+
 class Book:
     def __init__(self, title, isbn):
         self.title = title
@@ -86,6 +89,9 @@ if __name__ == "__main__":
 
 
 #=================================================================================
+
+A2 (Shape Hierarchy): Abstract base classes (abc.ABC) — forcing subclasses to implement shared methods, and trusting polymorphism instead of isinstance checks.
+
 
 from abc import ABC, abstractmethod
 import math
@@ -186,6 +192,9 @@ print(f"Total area of all shapes: {total_area(shapes):.2f}")
 
 #=======================================================================================================
 
+A3 (Retry-Safe API Caller): try/except retry loops — catching a specific exception, retrying, and raising your own error after repeated failure.
+
+
 import random
 
 
@@ -226,6 +235,9 @@ for trial in range(1, 4):
 
 #====================================================================================================================
 
+A4 (Employee Payroll): Class attributes vs. instance attributes — the trap where one shared value should update everyone at once.
+
+
 
 class Employee:
     tax_rate = 0.2  # class attribute — shared by ALL instances
@@ -262,6 +274,7 @@ print(f"{bob.name}: net_pay = {bob.net_pay():.2f}")
 
 #====================================================================================================================
 
+A5 (Logging Decorator): Decorators — wrapping a function to add behavior (logging) without touching its original code, using functools.wraps.
 
 
 import functools
@@ -310,6 +323,8 @@ print(f"calculate_grade.__doc__  = {calculate_grade.__doc__}")
 
 #=============================================================================================================
 
+B1 (Messy Survey Cleanup): Pandas data cleaning — stripping whitespace, fixing inconsistent case, filling missing values, dropping duplicates.
+
 
 import pandas as pd
 import numpy as np
@@ -350,6 +365,8 @@ print(df.describe())
 
 #====================================================================================================================
 
+B2 (Vectorized Grading Curve): NumPy vectorization — applying math to a whole array at once (no loops) using broadcasting and np.clip/np.where.
+
 
 
 import numpy as np
@@ -373,6 +390,8 @@ print("Curved scores:  ", curved_scores)
 
 
 #===================================================================================================================
+
+B3 (Nearest Neighbor by Hand): Cosine similarity — comparing vectors to find the "closest match" using sklearn.
 
 
 import numpy as np
@@ -407,6 +426,8 @@ print(f"\nClosest match: Customer {best_match[0]} (similarity = {best_match[1]:.
 
 #=============================================================================================
 
+B4 (Spam Filter Confusion Matrix): Classification metrics — confusion matrix, precision, recall, F1, and reasoning about false positives vs. false negatives.
+
 
 
 from sklearn.metrics import confusion_matrix, precision_score, recall_score, f1_score
@@ -440,6 +461,8 @@ print(f"F1 Score (spam):  {f1:.2f}")
 
 
 #============================================================================================
+
+B5 (Token Budget Estimator): Practical estimation function — summing a heuristic count across items and raising a clear error when a limit is exceeded.
 
 
 

@@ -1,9 +1,22 @@
-class Robot:
-    def __init__(self, name, battery=100):
-        self.name = name
-        self.battery = battery
+#class Robot:
+   # def __init__(self, name, battery=100):
+ #       self.name = name
+#        self.battery = battery
 
-r2 = Robot("R2")
-c3 = Robot("C3, battery=50")
-print(r2.name, r2.battery)
-print(c3.name, c3.battery)
+#r = Robot("R2")
+#print(r.battery)
+
+
+
+class Robot:
+    count = 0
+    def __init__(self):
+        Robot.count += 1
+
+Robot(), Robot(), Robot()
+print(Robot.count)
+
+
+
+
+
